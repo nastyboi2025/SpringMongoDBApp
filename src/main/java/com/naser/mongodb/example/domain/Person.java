@@ -3,11 +3,6 @@ package com.naser.mongodb.example.domain;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-/**
- * A simple POJO representing a Person
- *
- * @author Jeroen Reijn
- */
 @Document
 public class Person {
 

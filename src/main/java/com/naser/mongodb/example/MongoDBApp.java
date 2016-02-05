@@ -4,7 +4,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-
 /**
  * Small MongoDB application that uses spring data to interact with MongoDB.
  * 
@@ -27,12 +26,12 @@ public class MongoDBApp {
         //create person collection
         personRepository.createPersonCollection();
 
-        for(int i=0; i<20; i++) {
+        for(int i=0; i<3; i++) {
             personRepository.insertPersonWithNameJohnAndRandomAge();
         }
 
         personRepository.logAllPersons();
-        logger.info("Avarage age of a person is: {}", personRepository.getAvarageAgeOfPerson());
+        logger.info("Average age of a person is: {}", personRepository.getAvarageAgeOfPerson());
 
         logger.info("Finished MongoDemo application");
 	}

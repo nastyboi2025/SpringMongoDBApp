@@ -11,11 +11,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.stereotype.Repository;
 
-/**
- * Repository for {@link Person}s
- *
- * @author Jeroen Reijn
- */
 @Repository
 public class PersonRepository {
 
@@ -50,7 +45,7 @@ public class PersonRepository {
         //get random age between 1 and 100
         double age = Math.ceil(Math.random() * 100);
 
-        Person p = new Person("John", (int) age);
+        Person p = new Person("Naser", (int) age);
 
         mongoTemplate.insert(p);
     }
