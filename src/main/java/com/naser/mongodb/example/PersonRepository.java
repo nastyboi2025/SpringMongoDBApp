@@ -21,7 +21,7 @@ public class PersonRepository {
 
     public void logAllPersons() {
         List<Person> results = mongoTemplate.findAll(Person.class);
-        logger.info("Total amount of persons: {}", results.size());
+        logger.info("Total amount of people is: {}", results.size());
         logger.info("Results: {}", results);
     }
 
