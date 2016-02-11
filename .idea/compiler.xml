@@ -17,16 +17,16 @@
       <profile default="true" name="Default" enabled="false">
         <processorPath useClasspath="true" />
       </profile>
-      <profile default="false" name="Annotation profile for MongoDBApp" enabled="true">
+      <profile default="false" name="Annotation profile for spring-mongo-demo" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="MongoDBApp" />
+        <module name="spring-mongo-demo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="MongoDBApp" target="1.7" />
+      <module name="spring-mongo-demo" target="1.6" />
     </bytecodeTargetLevel>
   </component>
 </project>

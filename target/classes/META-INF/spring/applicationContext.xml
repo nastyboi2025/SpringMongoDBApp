@@ -18,12 +18,13 @@
   <!-- Define the MongoTemplate which handles connectivity with MongoDB -->
   <bean id="mongoTemplate" class="org.springframework.data.mongodb.core.MongoTemplate">
     <constructor-arg name="mongo" ref="mongo"/>
-    <constructor-arg name="databaseName" value="mongonew"/>
+    <constructor-arg name="databaseName" value="test1"/>
   </bean>
 
   <!-- Factory bean that creates the Mongo instance -->
   <bean id="mongo" class="org.springframework.data.mongodb.core.MongoFactoryBean">
-    <property name="host" value="localhost"/>
+   <!-- <property name="host" value="localhost"/>-->
+    <property name="host" value="192.168.99.100:32768"/>
   </bean>
 
   <!-- Use this post processor to translate any MongoExceptions thrown in @Repository annotated classes -->
