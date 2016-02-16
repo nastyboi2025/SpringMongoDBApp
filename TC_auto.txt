@@ -7,3 +7,5 @@ test v2
 should be sorted now
 
 final test hello
+
+tc worked now getting artifactory v1
