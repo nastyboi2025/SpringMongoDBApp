@@ -3,3 +3,5 @@ TC setup and tracking Github with a trigger in place
 now got TC running via Docker s will test
 
 test v2
+
+should be sorted now
