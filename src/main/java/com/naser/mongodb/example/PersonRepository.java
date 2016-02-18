@@ -41,11 +41,11 @@ public class PersonRepository {
         return age / results.size();
     }
 
-    public void insertPersonWithNameJohnAndRandomAge() {
+    public void insertPerson() {
         //get random age between 1 and 100
         double age = Math.ceil(Math.random() * 100);
 
-        Person p = new Person("Naser", (int) age);
+        Person p = new Person("Nayeem", (int) age);
 
         mongoTemplate.insert(p);
     }

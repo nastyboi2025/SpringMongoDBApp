@@ -27,7 +27,7 @@ public class MongoDBApp {
         personRepository.createPersonCollection();
 
         for(int i=0; i<5; i++) {
-            personRepository.insertPersonWithNameJohnAndRandomAge();
+            personRepository.insertPerson();
         }
 
         personRepository.logAllPersons();
